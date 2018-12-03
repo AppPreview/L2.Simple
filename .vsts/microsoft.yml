@@ -1,7 +1,5 @@
-queue:
-  name: Default
+pool: server
 steps:
-- task: CmdLine@1
+- task: delay@1
   inputs:
-    filename: "echo"
-    arguments: "hello yaml"
+    delayForMinutes: 0
